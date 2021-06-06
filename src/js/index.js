@@ -1,3 +1,7 @@
+setInterval(async () => {
+    await updateList();
+}, 1000);
+
 async function updateList(){
   const res = await getReq("/get");
   console.log(res.list);
